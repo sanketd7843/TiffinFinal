@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TiffinAug</string>
+    <string name="twoDayPack"> <strike> ₹120  </strike> ₹100  </string>
+    <string name="fifteenDayPack"> <strike> ₹220  </strike> ₹200  </string>
+    <string name="thirtyDayPack"> <strike> ₹320  </strike> ₹300  </string>
+
+</resources>

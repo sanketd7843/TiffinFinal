@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/navigation_my_offer"
+        android:icon="@drawable/ic_offer"
+        android:title="Offers" />
+
+    <item
+        android:id="@+id/navigation_date"
+        android:icon="@drawable/ic_date_24"
+        android:title="Calender" />
+
+    <item
+        android:id="@+id/navigation_subscription"
+        android:icon="@drawable/ic_subscriptions_black_24dp"
+        android:title="Subscription" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account"
+        android:title="Profile"/>
+</menu>

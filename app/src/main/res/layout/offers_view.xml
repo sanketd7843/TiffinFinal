@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/offers_info"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/gradient_home_page4"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/offer_image"
+            android:padding="10dp"
+            android:src="@drawable/food_main" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/offer_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/google_sans_medium"
+                android:gravity="center"
+                android:text="30 Days Package"
+                android:textColor="@color/white_spotify"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/offer_disc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/google_sans_medium"
+                android:gravity="center"
+                android:text="Discription about the offer"
+                android:textColor="@color/white_spotify"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
