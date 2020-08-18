@@ -36,7 +36,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -138,7 +137,6 @@
                 android:orientation="vertical">
 
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -161,13 +159,23 @@
                         android:layout_height="wrap_content" />
 
                     <ImageButton
-                        android:id="@+id/bt_toggle_description"
+                        android:id="@+id/bt_toggle_descriptionDown"
                         android:layout_width="?attr/actionBarSize"
                         android:layout_height="?attr/actionBarSize"
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:tint="@color/white_spotify"
                         app:srcCompat="@drawable/ic_arrow_drop"
                         tools:ignore="VectorDrawableCompat" />
+
+                    <ImageButton
+                        android:id="@+id/bt_toggle_descriptionUp"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:tint="@color/white_spotify"
+                        app:srcCompat="@drawable/ic_arrow_drop_up_24"
+                        tools:ignore="VectorDrawableCompat"
+                        android:visibility="gone"/>
 
                 </LinearLayout>
 
@@ -184,6 +192,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:textColor="@color/white_spotify"
                         android:text="@string/lorem_ipsum"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
@@ -216,7 +225,7 @@
                         android:layout_height="wrap_content" />
 
                     <ImageButton
-                        android:id="@+id/bt_toggle_date"
+                        android:id="@+id/bt_toggle_dateDown"
                         android:layout_width="?attr/actionBarSize"
                         android:layout_height="?attr/actionBarSize"
                         android:background="?attr/selectableItemBackgroundBorderless"
@@ -224,10 +233,17 @@
                         app:srcCompat="@drawable/ic_arrow_drop"
                         tools:ignore="VectorDrawableCompat" />
 
-
+                    <ImageButton
+                        android:id="@+id/bt_toggle_dateUp"
+                        android:layout_width="?attr/actionBarSize"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:tint="@color/white_spotify"
+                        android:visibility="gone"
+                        app:srcCompat="@drawable/ic_arrow_drop_up_24"
+                        tools:ignore="VectorDrawableCompat" />
 
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:id="@+id/lyt_expand_date"
@@ -245,6 +261,8 @@
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:id="@+id/in_date"
+                            android:theme="@style/EditText.Grey"
+                            android:textColor="@color/white_spotify"
                             android:layout_alignParentTop="true"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true" />
@@ -252,7 +270,7 @@
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="SELECT DATE"
+                            android:text="Start Date"
                             android:id="@+id/btn_date"
                             android:background="@drawable/btn_rounded_primary"
                             android:layout_alignBottom="@+id/in_date"
@@ -263,6 +281,8 @@
                             android:layout_width="200dp"
                             android:layout_height="wrap_content"
                             android:id="@+id/in_time"
+                            android:theme="@style/EditText.Grey"
+                            android:textColor="@color/white_spotify"
                             android:layout_below="@+id/in_date"
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true" />
@@ -270,7 +290,7 @@
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="SELECT TIME"
+                            android:text="End Date"
                             android:background="@drawable/btn_rounded_primary"
                             android:id="@+id/btn_time"
                             android:layout_below="@+id/btn_date"
@@ -278,6 +298,7 @@
                             android:layout_alignStart="@+id/btn_date" />
 
                     </RelativeLayout>
+
                 </LinearLayout>
 
                 <View
@@ -286,8 +307,8 @@
                     android:layout_marginTop="20dp"
                     android:background="@color/grey_20" />
 
-
                 <Button
+                    android:id="@+id/btnDateSubmit"
                     android:layout_width="wrap_content"
                     android:layout_height="55dp"
                     android:layout_gravity="center"
@@ -296,13 +317,11 @@
                     android:background="@drawable/btn_rounded_green_300"
                     android:text="Buy Now"
                     android:textSize="18dp"
-                    android:layout_marginTop="80dp"
+                    android:layout_marginTop="20dp"
                     android:textAllCaps="false"
                     android:textColor="@color/white_spotify" />
 
             </LinearLayout>
-
-
 
         </androidx.core.widget.NestedScrollView>
 

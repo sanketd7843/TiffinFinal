@@ -36,6 +36,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/twoDayPackageCard"
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
                     android:layout_margin="10dp"
@@ -109,6 +110,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/fiftyDayPackageCard"
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
                     android:layout_margin="10dp"
@@ -175,13 +177,14 @@
                                 android:textSize="17dp"
                                 android:visibility="gone" />
 
-
                         </LinearLayout>
+
                     </LinearLayout>
 
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/thirtyDayPackageCard"
                     android:layout_width="match_parent"
                     android:layout_height="110dp"
                     android:layout_margin="10dp"

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home1">
+    app:startDestination="@+id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
@@ -11,26 +11,31 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.tiffin01.fragment.gallery.GalleryFragment"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_refAndEarn"
+        android:name="com.example.tiffin01.referFragment"
+        tools:layout="@layout/activity_refer_and_earn_new" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.tiffin01.fragment.slideshow.SlideshowFragment"
-        tools:layout="@layout/fragment_slideshow" />
-    <fragment
-        android:id="@+id/nav_home1"
-        android:name="com.example.tiffin01.fragment.HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_cw"
+        android:name="com.example.tiffin01.rewardFragment"
+        tools:layout="@layout/activity_reward" />
 
     <fragment
-        android:id="@+id/nav_gallery1"
-        android:name="com.example.tiffin01.fragment.gallery.GalleryFragment"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_feedback"
+        android:name="com.example.tiffin01.RatingActivity"
+        tools:layout="@layout/activity_rating" />
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.tiffin01.aboutFragment"
+        tools:layout="@layout/about" />
 
     <fragment
-        android:id="@+id/nav_slideshow1"
-        android:name="com.example.tiffin01.fragment.slideshow.SlideshowFragment"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_help"
+        android:name="com.example.tiffin01.helpFragment"
+        tools:layout="@layout/helpfragment" />
+
+    <fragment
+        android:id="@+id/nav_tc"
+        android:name="com.example.tiffin01.termsAndConditionsFragment"
+        tools:layout="@layout/activity_terms_and_conditions" />
 </navigation>

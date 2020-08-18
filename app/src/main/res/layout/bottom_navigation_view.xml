@@ -8,13 +8,13 @@
     android:layout_marginStart="0dp"
     android:layout_marginEnd="0dp"
     app:itemTextColor="@color/white_spotify"
-    app:itemIconTint="@color/white_spotify"
-    android:background="@color/grey_spotify"
+    app:itemIconTint="@color/green_spotify"
+    android:background="@color/black_spotify"
     android:layout_alignParentLeft="true"
     android:layout_alignParentRight="true"
     android:layout_alignParentBottom="true"
     app:menu="@menu/bottom_nav_menu"
-    android:backgroundTint="@color/grey_spotify"
+    android:backgroundTint="@color/black_spotify"
     app:labelVisibilityMode="labeled">
 
 </com.google.android.material.bottomnavigation.BottomNavigationView>

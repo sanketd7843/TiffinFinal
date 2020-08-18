@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".loginMobActivity"/>
-        <activity android:name=".loginOtpActivity"/>
-        <activity android:name=".RatingActivity"/>
-        <activity android:name=".SignUpActivity"/>
-        <activity android:name=".ThirtyDaysPack"/>
+        <activity android:name=".termsAndConditionsFragment"></activity>
+        <activity android:name=".loginMobActivity" />
+        <activity android:name=".loginOtpActivity" />
+        <activity android:name=".referFragment" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".rewardActivtiy"/>
+        <activity android:name=".ThirtyDaysPack" />
         <activity android:name=".splashActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

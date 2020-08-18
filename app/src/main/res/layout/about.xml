@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_spotify"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/google_sans_regular"
+            android:gravity="center"
+            android:text="About"
+            android:textColor="@color/green_spotify"
+            android:textSize="27dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/white_spotify"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="19dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/termsConditions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/long_lorem_ipsum"
+                android:textSize="17dp"
+                android:textAlignment="center"
+                android:textColor="@color/white_spotify"
+                android:gravity="center_horizontal" />
+
+
+            <Button
+                android:id="@+id/btn_terms"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/btn_rounded_green_300"
+                android:text="I Understand"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

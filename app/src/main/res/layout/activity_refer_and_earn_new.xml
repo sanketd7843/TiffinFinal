@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_spotify"
+    android:background="@color/black_spotify"
     android:orientation="vertical">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="650dp"
-        android:background="@drawable/refer_screen"
+        android:layout_height="match_parent"
+        android:id="@+id/ll"
+        android:background="@color/black_spotify"
+        android:gravity="center"
         android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_money" />
 
         <TextView
             android:layout_width="match_parent"
@@ -19,15 +27,12 @@
             android:layout_margin="30dp"
             android:gravity="center"
             android:text="Share the love by inviting your friends and both will get rewarded"
-            android:textColor="@color/black_spotify"
+            android:textColor="@color/white_spotify"
             android:textSize="20dp"
-            android:textStyle="normal"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="348dp" />
+            android:textStyle="normal" />
 
         <TextView
+            android:id="@+id/myRefCode"
             android:layout_width="133dp"
             android:layout_height="38dp"
             android:gravity="center"
@@ -37,19 +42,25 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="488dp"
             tools:layout_editor_absoluteY="488dp" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
     <Button
+        android:id="@+id/referBtn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="60dp"
         android:background="@color/green_spotify"
+        android:fontFamily="@font/google_sans_medium"
         android:text="Refer Now"
-        android:fontFamily="@font/google_sans_light"
+        android:textColor="@color/white_spotify"
         android:textSize="25dp"
-        android:textStyle="bold"/>
+        android:layout_alignBottom="@id/ll"
+        android:textStyle="bold" />
 
-</LinearLayout>
+
+</RelativeLayout>
 
 

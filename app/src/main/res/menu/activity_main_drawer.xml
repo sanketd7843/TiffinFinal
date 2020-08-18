@@ -4,37 +4,42 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
         <item
-            android:id="@+id/nav_calender"
-            android:icon="@drawable/ic_date_range_black_24dp"
-            android:title="Calender" />
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+
         <item
             android:id="@+id/nav_refAndEarn"
             android:icon="@drawable/ic_money"
             android:title="Refer And Earn" />
+
         <item
             android:id="@+id/nav_cw"
             android:icon="@drawable/ic_wallet"
             android:title="Credits And Wallet" />
+
         <item
             android:id="@+id/nav_feedback"
             android:icon="@drawable/ic_feedback"
             android:title="Feedback" />
+
         <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_info"
             android:title="About" />
+
         <item
             android:id="@+id/nav_help"
             android:icon="@drawable/ic_help"
             android:title="Help" />
+
         <item
             android:id="@+id/nav_tc"
             android:icon="@drawable/ic_tc"
             android:title="Terms And Conditions" />
-        <item
-            android:id="@+id/nav_logout"
-            android:icon="@drawable/ic_exit"
-            android:title="Logout" />
+
     </group>
+
 </menu>
