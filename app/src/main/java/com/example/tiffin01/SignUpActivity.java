@@ -39,7 +39,6 @@ public class SignUpActivity extends AppCompatActivity {
         radioSexGroup = (RadioGroup) findViewById(R.id.gender1);
         int selectedId = radioSexGroup.getCheckedRadioButtonId();
         radioSexButton = (RadioButton) findViewById(selectedId);
-        gender = radioSexButton.getText().toString();
 
 
         signup.setOnClickListener(new View.OnClickListener() {
