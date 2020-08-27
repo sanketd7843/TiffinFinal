@@ -14,11 +14,6 @@
         android:title="Offers" />
 
     <item
-        android:id="@+id/navigation_date"
-        android:icon="@drawable/ic_date_24"
-        android:title="Calender" />
-
-    <item
         android:id="@+id/navigation_subscription"
         android:icon="@drawable/ic_subscriptions_black_24dp"
         android:title="Subscription" />

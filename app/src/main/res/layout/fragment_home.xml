@@ -15,8 +15,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:layout_marginTop="25dp"
-            android:elevation="15dp">
+            android:layout_marginTop="23dp"
+            android:elevation="15dp"
+            app:cardCornerRadius="23dp">
 
             <androidx.viewpager.widget.ViewPager
                 android:id="@+id/viewPager"
@@ -59,26 +60,27 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="@font/google_sans_medium"
-                            android:gravity="center"
+                            android:fontFamily="@font/cocon_reg"
+                            android:gravity="left"
                             android:text="2 Day Package"
                             android:textColor="@color/white_spotify"
-                            android:textSize="25dp" />
+                            android:textSize="23dp" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
-                            android:fontFamily="@font/google_sans_medium"
-                            android:gravity="center"
+                            android:fontFamily="@font/cocon_reg"
+                            android:gravity="left"
                             android:text="Discription about the offer"
                             android:textColor="@color/white_spotify"
-                            android:textSize="17dp" />
+                            android:textSize="15dp"
+                            android:textStyle="italic" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
+                            android:gravity="left"
                             android:orientation="horizontal">
 
                             <TextView
@@ -86,21 +88,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/google_sans_medium"
+                                android:fontFamily="@font/cocon_reg"
                                 android:gravity="center"
                                 android:text="@string/twoDayPack"
                                 android:textColor="@color/white_spotify"
-                                android:textSize="17dp" />
+                                android:textSize="15dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/google_sans_medium"
+                                android:fontFamily="@font/cocon_reg"
                                 android:gravity="center"
                                 android:text="80"
                                 android:textColor="@color/white_spotify"
-                                android:textSize="17dp"
+                                android:textSize="15dp"
                                 android:visibility="gone" />
 
 
@@ -133,26 +135,27 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="@font/google_sans_medium"
-                            android:gravity="center"
+                            android:fontFamily="@font/cocon_reg"
+                            android:gravity="left"
                             android:text="15 Days Package"
                             android:textColor="@color/white_spotify"
-                            android:textSize="25dp" />
+                            android:textSize="23dp" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
-                            android:fontFamily="@font/google_sans_medium"
-                            android:gravity="center"
+                            android:fontFamily="@font/cocon_reg"
+                            android:gravity="left"
                             android:text="Discription about the offer"
                             android:textColor="@color/white_spotify"
-                            android:textSize="17dp" />
+                            android:textSize="15dp"
+                            android:textStyle="italic" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
+                            android:gravity="left"
                             android:orientation="horizontal">
 
                             <TextView
@@ -160,21 +163,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/google_sans_medium"
+                                android:fontFamily="@font/cocon_reg"
                                 android:gravity="center"
                                 android:text="@string/fifteenDayPack"
                                 android:textColor="@color/white_spotify"
-                                android:textSize="17dp" />
+                                android:textSize="15dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/google_sans_medium"
-                                android:gravity="center"
+                                android:fontFamily="@font/cocon_reg"
+                                android:gravity="left"
                                 android:text="80"
                                 android:textColor="@color/white_spotify"
-                                android:textSize="17dp"
+                                android:textSize="15dp"
                                 android:visibility="gone" />
 
                         </LinearLayout>
@@ -207,26 +210,26 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:fontFamily="@font/google_sans_medium"
-                            android:gravity="center"
+                            android:fontFamily="@font/cocon_reg"
+                            android:gravity="left"
                             android:text="30 Days Package"
                             android:textColor="@color/white_spotify"
-                            android:textSize="25dp" />
+                            android:textSize="23dp" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginTop="5dp"
-                            android:fontFamily="@font/google_sans_medium"
-                            android:gravity="center"
+                            android:fontFamily="@font/cocon_reg"
+                            android:gravity="left"
                             android:text="Discription about the offer"
                             android:textColor="@color/white_spotify"
-                            android:textSize="17dp" />
-
+                            android:textSize="15dp"
+                            android:textStyle="italic" />
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
+                            android:gravity="left"
                             android:orientation="horizontal">
 
                             <TextView
@@ -234,21 +237,21 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/google_sans_medium"
+                                android:fontFamily="@font/cocon_reg"
                                 android:gravity="center"
                                 android:text="@string/thirtyDayPack"
                                 android:textColor="@color/white_spotify"
-                                android:textSize="17dp" />
+                                android:textSize="15dp" />
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
-                                android:fontFamily="@font/google_sans_medium"
+                                android:fontFamily="@font/cocon_reg"
                                 android:gravity="center"
                                 android:text="80"
                                 android:textColor="@color/white_spotify"
-                                android:textSize="17dp"
+                                android:textSize="15dp"
                                 android:visibility="gone" />
 
 

@@ -30,7 +30,9 @@
             android:layout_marginTop="10dp"
             android:text="Submit your feedback here"
             android:textColor="@color/white_spotify"
-            android:gravity="center"
+            android:gravity="top"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
             android:background="@drawable/feedback_rounded"
             />
 
@@ -87,6 +89,7 @@
             android:textSize="20dp"
             android:background="@drawable/btn_rounded_green_300"
             android:text="Submit"
+            android:textColor="@color/white_spotify"
             android:layout_gravity="center"/>
 
     </LinearLayout>

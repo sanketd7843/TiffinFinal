@@ -28,7 +28,7 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
-    ImageView logoutbtn;
+    ImageView logoutbtn, locationbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,18 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         logoutbtn = findViewById(R.id.showlogoutButton);
+        locationbtn = findViewById(R.id.showlocationButton);
 
+
+
+        logoutbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent (MainActivity.this, loginMobActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
 
         logoutbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,9 +106,6 @@ public class MainActivity extends AppCompatActivity {
                             break;
                         case R.id.navigation_subscription:
                             selectedFragment = new SubscriptionFragment();
-                            break;
-                        case R.id.navigation_date:
-                            selectedFragment = new CalenderFragment();
                             break;
                         case R.id.navigation_account:
                             selectedFragment = new AccountFragment();

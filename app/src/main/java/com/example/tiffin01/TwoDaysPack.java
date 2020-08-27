@@ -2,29 +2,23 @@
 package com.example.tiffin01;
 
 import android.app.DatePickerDialog;
-import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.TextClock;
 import android.widget.TextView;
-import android.widget.TimePicker;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import org.w3c.dom.Text;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class ThirtyDaysPack extends AppCompatActivity implements
+public class TwoDaysPack extends AppCompatActivity implements
         View.OnClickListener {
 
     Button btnStartDatePicker, btnEndDatePicker,btnDateSubmit;
@@ -37,7 +31,7 @@ public class ThirtyDaysPack extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_thirty_days_pack);
+        setContentView(R.layout.activity_two_days_pack);
 
         btnStartDatePicker = (Button) findViewById(R.id.btn_date);
         btnDateSubmit = findViewById(R.id.btnDateSubmit);
@@ -139,7 +133,7 @@ public class ThirtyDaysPack extends AppCompatActivity implements
                             } catch (ParseException e) {
                                 e.printStackTrace();
                             }
-                            cd.add(Calendar.DATE, 30);
+                            cd.add(Calendar.DATE, 2);
                             SimpleDateFormat sdf1 = new SimpleDateFormat("dd-MM-yyyy");
                             String output = sdf1.format(cd.getTime());
                             Log.e("parsed", output);
@@ -152,7 +146,7 @@ public class ThirtyDaysPack extends AppCompatActivity implements
     btnDateSubmit.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Intent i = new Intent(ThirtyDaysPack.this, MainActivity.class);
+            Intent i = new Intent(TwoDaysPack.this, MainActivity.class);
             startActivity(i);
             finish();
         }

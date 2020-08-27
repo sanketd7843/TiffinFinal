@@ -58,6 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="60dp"
+                android:textColor="@color/white_spotify"
                 android:background="@drawable/btn_rounded_green_300"
                 android:text="I Understand"
                 android:textSize="20dp" />

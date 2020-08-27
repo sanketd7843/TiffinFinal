@@ -10,8 +10,10 @@ import android.widget.LinearLayout;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import com.example.tiffin01.FifteenDaysPack;
 import com.example.tiffin01.R;
 import com.example.tiffin01.ThirtyDaysPack;
+import com.example.tiffin01.TwoDaysPack;
 
 public class HomeFragment extends Fragment {
 
@@ -31,7 +33,7 @@ public class HomeFragment extends Fragment {
         twoday.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), ThirtyDaysPack.class);
+                Intent i = new Intent(getActivity(), TwoDaysPack.class);
                 startActivity(i);
             }
         });
@@ -39,7 +41,7 @@ public class HomeFragment extends Fragment {
         fifteenday.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getActivity(), ThirtyDaysPack.class);
+                Intent i = new Intent(getActivity(), FifteenDaysPack.class);
                 startActivity(i);
             }
         });

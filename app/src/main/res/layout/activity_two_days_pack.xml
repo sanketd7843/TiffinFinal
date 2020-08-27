@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent_view"
     android:layout_width="match_parent"
-    tools:context=".ThirtyDaysPack"
+    tools:context=".TwoDaysPack"
     android:layout_height="match_parent"
     android:background="@color/black_spotify">
 
