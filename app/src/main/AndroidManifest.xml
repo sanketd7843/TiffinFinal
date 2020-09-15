@@ -9,15 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".locationActivity"/>
-        <activity android:name=".loginMobActivity" />
+        <activity android:name=".subscriptionTwoDay"/>
+        <activity android:name=".locationActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".loginOtpActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".ThirtyDaysPack" />
         <activity android:name=".TwoDaysPack" />
         <activity android:name=".FifteenDaysPack" />
         <activity android:name=".splashActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".loginMobActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
